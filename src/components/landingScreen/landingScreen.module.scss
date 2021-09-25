@@ -1,0 +1,158 @@
+@import '../../styles/mixins.scss';
+
+.mainScreen {
+	height: 100vh;
+	width: 100vw;
+	background: #fcf4e4;
+	overflow: hidden;
+	position: relative;
+}
+
+.lemonFull1,
+.lemonFull2,
+.lemonHalf1,
+.lemonHalf2,
+.lemonQuarter1,
+.lemonQuarter2,
+.petal1,
+.petal2,
+.flower1,
+.flower2,
+.flower3,
+.flower4 {
+	position: absolute;
+	transition: all 0.4s;
+}
+
+.scene {
+	height: 100vh;
+	position: relative;
+}
+
+.lemonFull1 {
+	left: -80px;
+}
+
+.lemonFull2,
+.petal1,
+.flower5 {
+	left: 60vw;
+	right: 0;
+	bottom: 400px;
+	margin: auto;
+	transform: scale(0.7) rotate(20deg);
+}
+
+.petal1 {
+	left: 70vw;
+}
+
+.lemonHalf1,
+.petal2 {
+	left: -40vw;
+	right: 0;
+	bottom: -600px;
+	margin: auto;
+	transform: scale(0.7) rotate(90deg);
+}
+
+.petal2 {
+	left: -70vw;
+}
+
+.lemonHalf2,
+.flower1 {
+	right: 1vw;
+	bottom: -110px;
+	transform: scale(0.7) rotate(20deg);
+}
+
+.flower1 {
+	bottom: 0;
+	right: 30vw;
+}
+
+.flower2 {
+	left: 30vw;
+	top: 120px;
+	transform: scale(0.9);
+}
+
+.flower3 {
+	top: 50vh;
+	left: -20px;
+}
+
+.flower4 {
+	top: -30px;
+	right: 20vw;
+	transform: scale(0.6);
+}
+
+.lemonQuarter1 {
+	left: 1vw;
+	bottom: 0;
+	transform: scale(0.7);
+}
+
+.lemonQuarter2 {
+	right: 1vw;
+	top: -50px;
+	transform: rotate(200deg);
+}
+
+.logo,
+.blob {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.blob {
+	@include flex();
+
+	background: #fff;
+	height: 600px;
+	width: 600px;
+	max-width: 90vw;
+	max-height: 90vw;
+	border-radius: 30% 50% 20% 40%;
+	animation: transform 10s ease-in-out infinite both alternate;
+	z-index: 2;
+	box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03);
+}
+
+@keyframes transform {
+	0%,
+	100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; }
+	20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; }
+	40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; }
+	60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; }
+	80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; }
+}
+
+@media (max-width: 768px) {
+	.lemonFull1,
+	.lemonFull2,
+	.lemonHalf1,
+	.lemonHalf2,
+	.lemonQuarter1,
+	.lemonQuarter2,
+	.petal1,
+	.petal2,
+	.flower1,
+	.flower2,
+	.flower3,
+	.flower4 {
+		transform: scale(0.3);
+	}
+
+	.logo {
+		transform: scale(0.7);
+	}
+}
