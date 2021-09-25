@@ -1,0 +1,10 @@
+@import './styles/mixins.scss';
+@import './styles/variables.scss';
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	@include cursor();
+
+	font-family: $primary-font;
+	overflow-x: hidden;
+}
