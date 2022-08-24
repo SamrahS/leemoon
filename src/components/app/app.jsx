@@ -1,17 +1,17 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import LandingScreen from '../landingScreen';
+import { Routes, Route } from 'react-router-dom';
+import { LandingPage } from '../landingScreen';
 
 function App() {
 	return (
-		<Switch>
-			<Route title="Leemoon" component={LandingScreen} path="/" exact />
+		<Routes>
+			<Route path="/" element={<LandingPage />} />
 
 			{/*			<Route path="*">
 				<PageNotFound />
 			</Route> */}
-		</Switch>
+		</Routes>
 	);
 }
 
-export default App;
+export { App };
