@@ -10,7 +10,7 @@ import Petal from '../svgComponents/petal';
 import Flower from '../svgComponents/flower';
 import Logo from '../svgComponents/logo';
 
-function LandingPage() {
+function LandingScreen() {
 	const navigate = useNavigate();
 
 	React.useEffect(() => {
@@ -24,8 +24,9 @@ function LandingPage() {
 		gsap.to('#logo', { opacity: 0 });
 		gsap.to('#landingBlob', {
 			scale: 10,
+			duration: 1,
 			onComplete: () => {
-				navigate('/lemon-cake');
+				navigate('/leemoon');
 			}
 		}, '<0.5');
 	}
@@ -54,4 +55,4 @@ function LandingPage() {
 	);
 }
 
-export { LandingPage };
+export { LandingScreen };
