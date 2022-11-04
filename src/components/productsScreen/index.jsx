@@ -1,1 +1,3 @@
-export { ProductsScreen } from './productsScreen';
+import { ProductsScreen } from './productsScreen';
+
+export { ProductsScreen };
