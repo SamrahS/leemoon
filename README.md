@@ -1,4 +1,4 @@
 # Leemoon 🍋
 
-### When life gives you lemons, make business out of it. 
+### When life gives you lemons, make a business out of it. 
 
