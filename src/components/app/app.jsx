@@ -1,13 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { LandingPage } from '../landingScreen';
+import { LandingScreen } from '../landingScreen';
+import { ProductsScreen } from '../productsScreen';
 
 function App() {
 	return (
 		<Routes>
-			<Route path="/" element={<LandingPage />} />
+			<Route path="/" element={<LandingScreen />} />
+			<Route path="/leemoon" element={<ProductsScreen />} />
 
-			{/*			<Route path="*">
+			{/* <Route path="*">
 				<PageNotFound />
 			</Route> */}
 		</Routes>
