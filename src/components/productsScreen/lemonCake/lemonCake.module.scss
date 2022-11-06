@@ -1,0 +1,41 @@
+@import '../../../styles/mixins.scss';
+
+.mainScreen {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagesContainer{
+	width: 100vw;
+	min-height: 100vh;
+}
+.descContainer{
+	position: absolute;
+	left: 20%;
+	top: 70%;
+	z-index: 2;
+}
+.cake{
+	width: 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	user-select: none;
+}
+.dots{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	filter: blur(5px);
+	user-select: none;
+}

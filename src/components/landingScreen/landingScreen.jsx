@@ -25,6 +25,7 @@ function LandingScreen() {
 		gsap.to('#landingBlob', {
 			scale: 10,
 			duration: 1,
+			backgroundColor: '#f0ece4',
 			onComplete: () => {
 				navigate('/leemoon');
 			}
@@ -35,7 +36,7 @@ function LandingScreen() {
 		<div className={Styles.mainScreen}>
 			<div id="landingBlob" onClick={() => { pageTransition(); }} className={Styles.blob}></div>
 			<Logo ID="logo" styles={Styles.logo} />
-			<div id="scene" className={Styles.parallaxContainer}>
+			<div id="scene">
 				<div data-depth="-0.5" className={Styles.scene}>
 					<div className={Styles.lemonFull1}><LemonFull /></div>
 					<div className={Styles.lemonFull2}><LemonFull /></div>
