@@ -1,6 +1,6 @@
 import React from 'react';
 import Parallax from 'parallax-js';
-import cake from '../../../assets/cake.png';
+import cake from '../../../assets/cake_opaque.png';
 import dots from '../../../assets/polka-dots.png';
 import Styles from './lemonCake.module.scss';
 
