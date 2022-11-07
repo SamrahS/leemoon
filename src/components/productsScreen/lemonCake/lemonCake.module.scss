@@ -9,20 +9,24 @@
 	justify-content: center;
 	align-items: center;
 }
-.imagesContainer{
+
+.imagesContainer {
 	position: absolute;
 	z-index: -1;
 }
-.above{
+
+.above {
 	z-index: 2;
 }
-.descContainer{
+
+.descContainer {
 	position: absolute;
 	left: 20%;
 	top: 70%;
 	z-index: 2;
 }
-.cake{
+
+.cake {
 	width: 300px;
 	position: absolute;
 	left: 0;
@@ -33,7 +37,10 @@
 	user-select: none;
 	z-index: 0;
 }
-.cakeLayer1, .cakeLayer2, .cakeLayer3{
+
+.cakeLayer1,
+.cakeLayer2,
+.cakeLayer3 {
 	height: 120vh;
 	position: absolute;
 	margin: auto;
@@ -43,12 +50,15 @@
 	bottom: 0;
 	user-select: none;
 }
-.cakeLayer1{
-	filter: blur(0px);
+
+.cakeLayer1 {
+	filter: blur(0);
 }
-.cakeLayer2{
+
+.cakeLayer2 {
 	filter: blur(1px);
 }
-.cakeLayer3{
+
+.cakeLayer3 {
 	filter: blur(1px);
 }
