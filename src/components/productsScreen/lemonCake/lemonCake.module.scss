@@ -1,0 +1,54 @@
+@import '../../../styles/mixins.scss';
+
+.mainScreen {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagesContainer{
+	position: absolute;
+	z-index: -1;
+}
+.above{
+	z-index: 2;
+}
+.descContainer{
+	position: absolute;
+	left: 20%;
+	top: 70%;
+	z-index: 2;
+}
+.cake{
+	width: 300px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	user-select: none;
+	z-index: 0;
+}
+.cakeLayer1, .cakeLayer2, .cakeLayer3{
+	height: 120vh;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	user-select: none;
+}
+.cakeLayer1{
+	filter: blur(0px);
+}
+.cakeLayer2{
+	filter: blur(1px);
+}
+.cakeLayer3{
+	filter: blur(1px);
+}
