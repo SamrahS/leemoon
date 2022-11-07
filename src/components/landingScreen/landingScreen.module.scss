@@ -8,6 +8,11 @@
 	position: relative;
 }
 
+.logo {
+	pointer-events: none;
+	width: 100%;
+}
+
 .lemonFull1,
 .lemonFull2,
 .lemonHalf1,
@@ -153,6 +158,39 @@
 	}
 
 	.logo {
+		transform: scale(0.6);
+	}
+
+	.blob {
+		transform: scale(0.8);
+	}
+
+	.lemonHalf1,
+	.petal2 {
+		bottom: 100px;
+	}
+
+	.lemonHalf2 {
+		bottom: 30px;
+		right: -80px;
+	}
+
+	.flower1 {
+		bottom: 20px;
+		right: 90px;
+	}
+
+	.lemonQuarter1 {
+		bottom: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.logo {
 		transform: scale(0.7);
+	}
+
+	.blob {
+		transform: scale(0.9);
 	}
 }
