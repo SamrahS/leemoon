@@ -24,8 +24,7 @@ function LandingScreen() {
 		gsap.to('#logo', { opacity: 0 });
 		gsap.to('#landingBlob', {
 			scale: 10,
-			duration: 1,
-			backgroundColor: '#fcf4e4',
+			duration: 0.5,
 			onComplete: () => {
 				navigate('/leemoon');
 			}

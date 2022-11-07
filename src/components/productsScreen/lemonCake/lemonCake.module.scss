@@ -13,16 +13,14 @@
 .imagesContainer {
 	position: absolute;
 	z-index: -1;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 .above {
-	z-index: 2;
-}
-
-.descContainer {
-	position: absolute;
-	left: 20%;
-	top: 70%;
 	z-index: 2;
 }
 
@@ -38,27 +36,14 @@
 	z-index: 0;
 }
 
+.layersContainer {
+	position: relative;
+}
+
 .cakeLayer1,
 .cakeLayer2,
 .cakeLayer3 {
 	height: 120vh;
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	margin-bottom: 100px;
 	user-select: none;
-}
-
-.cakeLayer1 {
-	filter: blur(0);
-}
-
-.cakeLayer2 {
-	filter: blur(1px);
-}
-
-.cakeLayer3 {
-	filter: blur(1px);
 }
