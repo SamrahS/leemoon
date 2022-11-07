@@ -23,6 +23,8 @@
       	'ignoreAtRules': ['function', 'if', 'each', 'include', 'mixin', 'else']
     }],
     'selector-type-no-unknown': null,
-	'selector-class-pattern': null
+	'selector-class-pattern': null,
+	'color-function-notation': null,
+	'alpha-value-notation': null
 	}
 }
