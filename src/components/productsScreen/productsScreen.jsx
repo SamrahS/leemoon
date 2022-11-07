@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { LemonCake } from './lemonCake/lemonCake';
+// import { LemonCake } from './lemonCake/lemonCake';
 // import { useNavigate } from 'react-router-dom';
 // import gsap from 'gsap';
 import Styles from './productsScreen.module.scss';
@@ -23,7 +23,7 @@ function ProductsScreen() {
 		<div className={Styles.mainScreen}>
 			{/* <h1>Hellasdooo</h1> */}
 			<Slider {...settings} >
-				<LemonCake />
+				{/* <LemonCake /> */}
 				<h1>Hello</h1>
 				{/* <LemonCake /> */}
 			</Slider>
