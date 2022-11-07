@@ -10,7 +10,7 @@
 
 	div {
 		height: 100vh;
-		width: 50px;
+		width: 55px;
 		position: relative;
 		padding: 30px 0;
 		transition: all 0.5s;
@@ -20,6 +20,7 @@
 		opacity: 0;
 		right: 10px;
 		overflow: hidden;
+		box-shadow: 2px 0 5px 3px rgba(0, 0, 0, 0.1);
 
 		p {
 			transform: rotate(90deg);
@@ -40,7 +41,7 @@
 			transition: all 0.3s;
 			font-size: 270px;
 			color: #fff;
-			line-height: 130px;
+			line-height: 150px;
 			font-weight: 900;
 			width: fit-content;
 			transition-delay: 0.2s;
@@ -69,7 +70,7 @@
 	}
 
 	.selected {
-		width: 100%;
+		width: calc(100vw - 165px);
 
 		p {
 			transform: rotate(0deg);
@@ -88,7 +89,7 @@
 
 		div {
 			width: 100vh;
-			height: 35px;
+			height: 40px;
 			position: relative;
 			padding: 0 20px;
 			transition: all 0.5s;
@@ -99,7 +100,7 @@
 			p {
 				transform: rotate(0deg);
 				font-size: 20px;
-				margin: 5px 0 0;
+				margin: 0 0 5px 0;
 				width: 100vw;
 				position: unset;
 			}
@@ -113,7 +114,8 @@
 		}
 
 		.selected {
-			height: 100%;
+			height: calc(100vh - 120px);
+			width: 100vw;
 		}
 	}
 }
