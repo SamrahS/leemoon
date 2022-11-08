@@ -8,7 +8,7 @@
 	display: flex;
 	justify-content: flex-end;
 
-	div {
+	.section {
 		height: 100vh;
 		width: 55px;
 		position: relative;
@@ -36,15 +36,40 @@
 			text-shadow: -2px 2px rgba(0, 0, 0, 0.12);
 		}
 
-		h4 {
+		.sectionContent {
 			opacity: 0;
 			transition: all 0.3s;
+			transition-delay: 0.1s;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+
+			.imageContainer {
+				width: 500px;
+				height: 500px;
+				max-width: 80vw;
+				max-height: 80vw;
+				position: absolute;
+				top: 20px;
+				right: 90px;
+				background-image: linear-gradient(120deg, #fff 0%, #eee 100%);
+				border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+				animation: morph 10s linear infinite;
+				transform-style: preserve-3d;
+				outline: 1px solid transparent;
+				will-change: border-radius;
+			}
+		}
+
+		h4 {
 			font-size: 270px;
+			opacity: 0.2;
 			color: #fff;
 			line-height: 150px;
 			font-weight: 900;
 			width: fit-content;
-			transition-delay: 0.2s;
 			pointer-events: none;
 			position: absolute;
 			bottom: -20px;
@@ -77,8 +102,8 @@
 			opacity: 0;
 		}
 
-		h4 {
-			opacity: 0.2;
+		.sectionContent {
+			opacity: 1;
 		}
 	}
 }
@@ -87,7 +112,7 @@
 	.mainScreen {
 		flex-direction: column;
 
-		div {
+		.section {
 			width: 100vh;
 			height: 40px;
 			position: relative;
@@ -97,10 +122,15 @@
 			right: 10px;
 			justify-content: flex-start;
 
+			.sectionContent .imageContainer {
+				right: 10vw;
+				top: 40px;
+			}
+
 			p {
 				transform: rotate(0deg);
 				font-size: 20px;
-				margin: 0 0 5px 0;
+				margin: 0 0 5px;
 				width: 100vw;
 				position: unset;
 			}
@@ -117,5 +147,35 @@
 			height: calc(100vh - 120px);
 			width: 100vw;
 		}
+	}
+}
+
+@media (max-width: 576px) {
+	.mainScreen .section .sectionContent .imageContainer {
+		right: 10vw;
+		top: 70px;
+	}
+}
+
+@keyframes morph {
+	0%,
+	100% {
+		border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+		transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+	}
+
+	34% {
+		border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+		transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+	}
+
+	50% {
+		opacity: 0.89;
+		transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+	}
+
+	67% {
+		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+		transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
 	}
 }
