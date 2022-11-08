@@ -32,7 +32,7 @@ function ProductsScreen() {
 
 	const sectionProps = (index) => ({
 		id: `productSection_${index}`,
-		className: section === index ? Styles.selected : null,
+		className: `${Styles.section} ${section === index ? Styles.selected : null}`,
 		onClick: () => setSection(index)
 	});
 
@@ -40,19 +40,39 @@ function ProductsScreen() {
 		<div className={Styles.mainScreen}>
 			<div {...sectionProps(0)}>
 				<p>LEMON CAKE</p>
-				<h4>LEMON<br/>CAKE</h4>
+				<div className={Styles.sectionContent}>
+					<h4>LEMON<br/>CAKE</h4>
+					<div className={Styles.imageContainer}>
+						<div className={Styles.imageShadow} />
+					</div>
+				</div>
 			</div>
 			<div {...sectionProps(1)}>
-				<p>LEMON CUP</p>
-				<h4>LEMON<br/>CUP</h4>
+				<p>LEMON CUPCAKE</p>
+				<div className={Styles.sectionContent}>
+					<h4>LEMON<br/>CUPCAKE</h4>
+					<div className={Styles.imageContainer}>
+						<div className={Styles.imageShadow} />
+					</div>
+				</div>
 			</div>
 			<div {...sectionProps(2)}>
-				<p>LEMON CUPCAKE</p>
-				<h4>LEMON<br/>CUPCAKE</h4>
+				<p>LEMON TART</p>
+				<div className={Styles.sectionContent}>
+					<h4>LEMON<br/>TART</h4>
+					<div className={Styles.imageContainer}>
+						<div className={Styles.imageShadow} />
+					</div>
+				</div>
 			</div>
 			<div {...sectionProps(3)}>
-				<p>LEMON TART</p>
-				<h4>LEMON<br/>TART</h4>
+				<p>LEMON TARTLET</p>
+				<div className={Styles.sectionContent}>
+					<h4>LEMON<br/>TARTLET</h4>
+					<div className={Styles.imageContainer}>
+						<div className={Styles.imageShadow} />
+					</div>
+				</div>
 			</div>
 		</div>
 	);
