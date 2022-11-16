@@ -72,7 +72,7 @@ function ProductsScreen() {
 	};
 
 	const navProps = (index) => ({
-		className: selectedIndex === index ? Styles.selected : null,
+		className: `${Styles.navImage} ${selectedIndex === index ? Styles.selected : null}`,
 		onClick: () => {
 			slider.current.slickGoTo(index);
 		}
@@ -129,10 +129,10 @@ function ProductsScreen() {
 					</div>
 				</div>
 				<div className={Styles.navigationContainer}>
-					<img className={Styles.navImage} {...navProps(0)} src={Tart} alt="tart" />
-					<img className={Styles.navImage} {...navProps(1)} src={Tart} alt="tart" />
-					<img className={Styles.navImage} {...navProps(2)} src={Tart} alt="tart" />
-					<img className={Styles.navImage} {...navProps(3)} src={Tart} alt="tart" />
+					<img {...navProps(0)} src={Tart} alt="tart" />
+					<img {...navProps(1)} src={Tart} alt="tart" />
+					<img {...navProps(2)} src={Tart} alt="tart" />
+					<img {...navProps(3)} src={Tart} alt="tart" />
 				</div>
 			</div>
 			<Slider {...settings} ref={slider}>
