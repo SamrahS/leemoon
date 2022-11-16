@@ -125,13 +125,13 @@
 	padding-bottom: 20px;
 
 	.cartImage {
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 	}
 
 	.cartItem {
 		position: relative;
-		margin-left: 10px;
+		margin-left: 5px;
 		margin-right: 10px;
 		display: flex;
 
@@ -139,7 +139,7 @@
 			font-size: 12px;
 			left: -15px;
 			margin: auto;
-			color: #777;
+			color: #555;
 		}
 
 		.removeButton {
@@ -150,8 +150,8 @@
 			background-color: #f2d65d;
 			color: #222;
 			font-size: 14px;
-			width: 15px;
-			height: 15px;
+			width: 20px;
+			height: 20px;
 			border-radius: 50%;
 			display: flex;
 			justify-content: center;
@@ -171,20 +171,34 @@
 	.cart {
 		width: 98vw;
 		font-size: 14px;
-		padding-bottom: 40px;
+		margin-bottom: 70px !important;
 		flex-direction: column;
 
 		.cartImage {
-			width: 38px;
-			height: 38px;
+			width: 55px;
+			height: 55px;
+			margin-left: -5px;
 		}
 
 		.cartItem {
-			margin-left: 10px;
-			margin-right: 0;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 10px;
 
 			.count {
-				font-size: 10px;
+				font-size: 12px;
+			}
+
+			.removeButton {
+				position: absolute;
+				right: -5px;
+				cursor: pointer;
+				top: -2px;
+				background-color: #f2d65d;
+				color: #222;
+				font-size: 14px;
+				width: 30px;
+				height: 30px;
 			}
 		}
 	}
@@ -193,8 +207,23 @@
 		margin-top: 10px;
 	}
 
-	.mainScreen .bgContainer {
-		padding-bottom: 5px;
+	.mainScreen {
+		height: fit-content;
+		margin-bottom: 100px;
+
+		.section {
+			height: 75vh;
+		}
+
+		.bgContainer {
+			padding-bottom: 5px;
+			width: 100vw;
+			height: 90vh;
+
+			.bgContent {
+				height: fit-content;
+			}
+		}
 	}
 }
 
