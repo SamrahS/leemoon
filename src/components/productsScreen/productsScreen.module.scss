@@ -1,238 +1,238 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .mainScreen {
-	height: 100vh;
-	width: 100vw;
-	min-height: 700px;
-	background-color: #fff;
-	overflow: hidden;
-	animation: show 0.5s linear;
+  height: 100vh;
+  width: 100vw;
+  min-height: 700px;
+  background-color: #fff;
+  overflow: hidden;
+  animation: show 0.5s linear;
 
-	img {
-		user-select: none;
-	}
+  img {
+    user-select: none;
+  }
 
-	.logo {
-		position: absolute;
-		left: 10px;
-		top: 10px;
-		width: 170px;
-		height: 35px;
-		z-index: 1;
-	}
+  .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 170px;
+    height: 35px;
+    z-index: 1;
+  }
 
-	.bgContainer {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100vw;
-		height: 100vh;
-		padding-bottom: 10px;
-		min-height: 700px;
-		z-index: 1;
-		display: flex;
-		align-items: flex-end;
-		background-color: transparent;
-		pointer-events: none;
+  .bgContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 10px;
+    min-height: 700px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    background-color: transparent;
+    pointer-events: none;
 
-		.bgContent {
-			height: 190px;
-			width: 100%;
-			display: flex !important;
-			align-items: center;
-			flex-direction: column;
-			text-align: center;
-			position: relative;
+    .bgContent {
+      height: 190px;
+      width: 100%;
+      display: flex !important;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
 
-			button {
-				height: 30px;
-				background: none !important;
-				outline: none !important;
-				border: none !important;
-				pointer-events: all;
-			}
+      button {
+        height: 30px;
+        background: none !important;
+        outline: none !important;
+        border: none !important;
+        pointer-events: all;
+      }
 
-			.priceContainer {
-				width: 70px;
-				text-align: left;
-				margin-left: 10px;
-			}
-		}
-	}
+      .priceContainer {
+        width: 70px;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+  }
 
-	.section {
-		width: 100vw;
-		height: 100vh;
-		min-height: 700px;
-		display: flex !important;
-		justify-content: center;
-		align-items: center;
-		background: transparent;
-		padding-bottom: 100px;
+  .section {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding-bottom: 100px;
 
-		img {
-			width: 500px;
-			height: 500px;
-			max-width: 75vw;
-			max-height: 75vw;
-			pointer-events: none;
-			user-select: none;
-			transform-origin: 50% 50%;
-		}
-	}
+    img {
+      width: 500px;
+      height: 500px;
+      max-width: 75vw;
+      max-height: 75vw;
+      pointer-events: none;
+      user-select: none;
+      transform-origin: 50% 50%;
+    }
+  }
 }
 
 .addButton {
-	color: #ddb611;
-	font-size: 19px;
-	font-weight: 900;
+  color: #ddb611;
+  font-size: 19px;
+  font-weight: 900;
 }
 
 .navigationContainer {
-	position: absolute;
-	height: 100vh;
-	min-height: 700px;
-	right: 10px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	display: flex !important;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  min-height: 700px;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-	.navImage {
-		height: 40px;
-		width: 40px;
-		filter: grayscale(100%);
-		transition: all 0.4s;
-		cursor: pointer;
-		pointer-events: all;
-		user-select: none;
-	}
+  .navImage {
+    height: 40px;
+    width: 40px;
+    filter: grayscale(100%);
+    transition: all 0.4s;
+    cursor: pointer;
+    pointer-events: all;
+    user-select: none;
+  }
 
-	.selected {
-		filter: grayscale(0%);
-	}
+  .selected {
+    filter: grayscale(0%);
+  }
 }
 
 .cart {
-	width: 90vw;
-	text-align: left;
-	display: flex;
-	align-items: center;
-	height: 100px;
-	padding-bottom: 20px;
+  width: 90vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-bottom: 20px;
 
-	.cartImage {
-		width: 50px;
-		height: 50px;
-	}
+  .cartImage {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+  }
 
-	.cartItem {
-		position: relative;
-		margin-left: 5px;
-		margin-right: 10px;
-		display: flex;
+  .cartItem {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: flex;
 
-		.count {
-			font-size: 12px;
-			left: -15px;
-			margin: auto;
-			color: #555;
-		}
+    .count {
+      font-size: 12px;
+      left: -15px;
+      margin: auto;
+      color: #555;
+    }
 
-		.removeButton {
-			position: absolute;
-			right: 0;
-			cursor: pointer;
-			top: 3px;
-			background-color: #f2d65d;
-			color: #222;
-			font-size: 14px;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			pointer-events: all;
-			font-weight: 900;
-			user-select: none;
-		}
-	}
+    .removeButton {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      top: 3px;
+      background-color: #f2d65d;
+      color: #222;
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: all;
+      font-weight: 900;
+      user-select: none;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-	.navigationContainer {
-		display: none !important;
-	}
+  .navigationContainer {
+    display: none !important;
+  }
 
-	.cart {
-		width: 98vw;
-		font-size: 14px;
-		margin-bottom: 70px !important;
-		flex-direction: column;
+  .cart {
+    width: 98vw;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+    flex-direction: column;
 
-		.cartImage {
-			width: 55px;
-			height: 55px;
-			margin-left: -5px;
-		}
+    .cartImage {
+      width: 55px;
+      height: 55px;
+    }
 
-		.cartItem {
-			margin-left: 5px;
-			margin-right: 5px;
-			margin-top: 10px;
+    .cartItem {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
 
-			.count {
-				font-size: 12px;
-			}
+      .count {
+        font-size: 12px;
+      }
 
-			.removeButton {
-				position: absolute;
-				right: -5px;
-				cursor: pointer;
-				top: -2px;
-				background-color: #f2d65d;
-				color: #222;
-				font-size: 14px;
-				width: 30px;
-				height: 30px;
-			}
-		}
-	}
+      .removeButton {
+        position: absolute;
+        right: -5px;
+        cursor: pointer;
+        top: -2px;
+        background-color: #f2d65d;
+        color: #222;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 
-	.checkoutButton {
-		margin-top: 10px;
-	}
+  .checkoutButton {
+    margin-top: 10px;
+  }
 
-	.mainScreen {
-		height: fit-content;
-		margin-bottom: 100px;
+  .mainScreen {
+    height: fit-content;
+    margin-bottom: 100px;
 
-		.section {
-			height: 75vh;
-		}
+    .section {
+      height: 75vh;
+    }
 
-		.bgContainer {
-			padding-bottom: 5px;
-			width: 100vw;
-			height: 90vh;
+    .bgContainer {
+      padding-bottom: 5px;
+      width: 100vw;
+      height: calc(98vh - 20px);
 
-			.bgContent {
-				height: fit-content;
-			}
-		}
-	}
+      .bgContent {
+        height: fit-content;
+      }
+    }
+  }
 }
 
 @keyframes show {
-	0% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
 
-	100% {
-		opacity: 1;
-	}
+  100% {
+    opacity: 1;
+  }
 }
